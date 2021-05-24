@@ -1,5 +1,3 @@
-import { Button } from '@chakra-ui/button';
-import { useColorMode } from '@chakra-ui/color-mode'
 import { Center, Heading } from '@chakra-ui/react';
 import { Stack, VStack, Flex, Box, Text } from '@chakra-ui/layout';
 import { useMediaQuery } from '@chakra-ui/media-query';
@@ -7,12 +5,9 @@ import '../styles/header.sass'
 
 function Header() {
 
-    const { colorMode } = useColorMode();
-    const isDark = colorMode === "dark";
-
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:755px)");
     return (
-        <Stack h="500px" marginTop="" w="100%" style={isDark ? { "backgroundColor": "" } : { "backgroundColor": "rgba(200, 255, 255,0.1)" }}>
+        <Stack h="500px" marginTop="50px" style={{width:"90%"}}>
             <Flex>
                 <div className="container" >
                     <div className="wrapper">
@@ -30,13 +25,22 @@ function Header() {
                         </p>
                     </div>
                 </div>
-                <Box mt={isNotSmallerScreen ? 0 : 0} align='flex-start'>
-                    <Text fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r, red.300, blue.500, purple.600)" bgClip='text' >Myself Soumyaneel</Text>
-                    <Button className="btn" mt={8} colorScheme="blue" onClick={() =>
-                        window.open("https://soumyaneel.web.app/")
-                    }>Hire Me</Button>
+                <Box mt={isNotSmallerScreen ? "0" : "16" } align='flex-start'>
+                    <Text ml="5" fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r, red.300, blue.500, purple.600)" bgClip='text' >Myself Soumyaneel</Text>
+                    <Box w="500px" ml="5">
+                        <Text>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt sint ratione dolore deleniti 
+                            dolorum aliquid totam placeat, sapiente magnam sit perspiciatis temporibus numquam ab odit, 
+                            doloremque libero voluptates harum maiores?
+                        </Text>
+                    </Box>
                 </Box>
             </Flex>
+            {/* <Box>
+                <Button className="btn" mt={8} colorScheme="blue" onClick={() =>
+                    window.open("https://soumyaneel.web.app/")
+                }>Hire Me</Button>
+            </Box> */}
         </Stack>
     )
 }

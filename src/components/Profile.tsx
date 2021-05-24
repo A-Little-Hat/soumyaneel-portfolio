@@ -1,15 +1,17 @@
 import React from 'react';
-import { Box } from '@chakra-ui/layout';
-import { useColorMode } from '@chakra-ui/color-mode'
+import { Flex, Box } from '@chakra-ui/layout';
+import { Spacer } from '@chakra-ui/react';
 
 const Profile = () => {
-    const { colorMode } = useColorMode();
-    const isDark = colorMode === "dark";
     return (
-        <Box mx="5%" minH="90vh" w="100%" style={isDark ? { "backgroundColor": "" } : { "backgroundColor": "rgba(200, 255, 255,0.1)" }} >
-            
-                    </Box>
-                    );
+        <Box w="100%" p="10">
+        <Flex w="100%" >
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=A-Little-Hat&amp;layout=compact" alt="A-Little-Hat Most Used Languages"/>
+                <Spacer/>
+            <img  src="https://github-readme-stats.vercel.app/api?username=A-Little-Hat&amp;show_icons=true" alt="A-Little-Hat GitHub Stats"/>
+        </Flex>
+        </Box>
+        );
 }
 
-                    export default Profile;
+export default Profile;
