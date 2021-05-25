@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useMediaQuery } from '@chakra-ui/media-query';
 import { Flex, Center, FormControl, FormLabel, FormHelperText, Input, Button } from '@chakra-ui/react';
 
 const Contact = () => {
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:755px)");
     const [email, setEmail] = useState("")
     const [name, setName] = useState("")
     const [msg, setMsg] = useState("")
@@ -14,8 +16,8 @@ const Contact = () => {
         setMsg("")
     }
     return (
-        <Center px="60px" >
-            <Flex h="100%" p="15px" w="100%" style={{borderWidth:"10px"}} >
+        <Center p={isNotSmallerScreen ? 150 : 0} >
+            <Flex h="100%" p="20px" w="100%" style={{ borderWidth: "10px" }} >
                 <FormControl >
                     <FormHelperText>Fill free to reach me.</FormHelperText>
                     <FormLabel>Email address</FormLabel>
