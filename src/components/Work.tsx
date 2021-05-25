@@ -1,15 +1,16 @@
 import React from 'react';
 import { Center } from '@chakra-ui/layout';
+import { Heading } from '@chakra-ui/react';
+import { useMediaQuery } from '@chakra-ui/media-query';
 
 import '../styles/work.css'
-import { Heading } from '@chakra-ui/react';
 
 const Work = () => {
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:996px)");
 
     return (
         <Center>
-            <section className="card-list">
-                
+            <section style={isNotSmallerScreen ? {paddingLeft:"0",paddingRight:"0"} : {paddingLeft:"10px",paddingRight:"10px"} } className="card-list">
                 <article className="card">
                     <Center>
                         <header className="card-header">
