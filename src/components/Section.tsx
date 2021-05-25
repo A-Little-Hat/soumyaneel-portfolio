@@ -1,6 +1,7 @@
 import React from 'react'
 import { HStack } from "@chakra-ui/layout";
-import { Center, Spacer, Button } from '@chakra-ui/react';
+import { Center, Spacer } from '@chakra-ui/react';
+import {Button} from 'react-bootstrap-v5'
 
 interface SectionProps {
     setArea:(areaNo:number)=> void
@@ -10,26 +11,26 @@ const Section: React.FC<SectionProps> = (props:SectionProps) => {
     return (
         <HStack w="100%"  >
             <Center w="100%" p="5%">
-                <Button w="20%" h="10" colorScheme="blue" bg="teal.500" onClick={()=>{
+                <Button className="btn btn-success" onClick={()=>{
                     props.setArea(0)
                 }} >
-                    <Center w="100%" px="5%">
+                    <Center w="100%" >
                         Profile
                     </Center>
                 </Button>
                 <Spacer />
-                <Button w="20%" h="10" bg="teal.500" colorScheme="blue" onClick={()=>{
+                <Button className="btn btn-success" onClick={()=>{
                     props.setArea(1)
                 }} >
-                    <Center w="100%" px="5%">
+                    <Center w="100%" >
                         Work Exprience
                     </Center>
                 </Button>
                 <Spacer />
-                <Button w="20%" h="10" bg="teal.500" colorScheme="blue" onClick={()=>{
+                <Button className="btn btn-success" onClick={()=>{
                     props.setArea(2)
                 }} >
-                    <Center w="100%" px="5%">
+                    <Center w="100%" >
                         Contact
                     </Center>
                 </Button>
