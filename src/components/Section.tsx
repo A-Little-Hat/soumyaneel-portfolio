@@ -1,7 +1,6 @@
 import React from 'react'
 import { HStack } from "@chakra-ui/layout";
-import { Center, Spacer } from '@chakra-ui/react';
-import {Button} from 'react-bootstrap-v5'
+import { Center, Spacer, Button } from '@chakra-ui/react';
 
 interface SectionProps {
     setArea:(areaNo:number)=> void
