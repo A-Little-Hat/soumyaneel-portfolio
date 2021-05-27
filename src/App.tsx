@@ -9,7 +9,6 @@ import Header from "./components/Header";
 import Section from "./components/Section"
 import Area from "./components/Area"
 
-import './styles/app.sass'
 
 function App() {
   const [areaNo, setAreaNo] = useState(0);
