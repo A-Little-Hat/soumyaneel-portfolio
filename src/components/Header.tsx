@@ -7,7 +7,7 @@ function Header() {
 
     const [isNotSmallerScreen] = useMediaQuery("(min-width:755px)");
     return (
-        <Stack h="500px" marginTop="50px" style={{ width: "90%" }}>
+        <Stack minH="500px" marginTop="50px" style={{ width: "90%" }}>
             <div className="secondary">
                 <div className="wrapper">
                     <img src="https://avatars.githubusercontent.com/u/65025579?v=4" alt="" />
@@ -42,7 +42,7 @@ function Header() {
                     </div>
                 </div>
 
-                <Box mt={isNotSmallerScreen ? "0" : "16"} align='flex-start'>
+                <Box className="intro" mt={isNotSmallerScreen ? "0" : "16"} align='flex-start'>
                     <Text ml="5" fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r, red.300, blue.500, purple.600)" bgClip='text' >Myself Soumyaneel</Text>
                     <Box w={isNotSmallerScreen ? "500px" : ""} mx="5" >
                         <Text>
