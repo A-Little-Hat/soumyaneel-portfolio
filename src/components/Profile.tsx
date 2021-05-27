@@ -8,7 +8,7 @@ const Profile = () => {
         <Flex w="100%" >
             <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=A-Little-Hat&amp;layout=compact" alt="A-Little-Hat Most Used Languages"/>
                 <Spacer/>
-            <img  src="https://github-readme-stats.vercel.app/api?username=A-Little-Hat&amp;show_icons=true" alt="A-Little-Hat GitHub Stats"/>
+            {/* <img  src="https://github-readme-stats.vercel.app/api?username=A-Little-Hat&amp;show_icons=true" alt="A-Little-Hat GitHub Stats"/> */}
         </Flex>
         </Box>
         );

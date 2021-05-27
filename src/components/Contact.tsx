@@ -19,7 +19,7 @@ const Contact = () => {
         <Center p={isNotSmallerScreen ? 150 : 0} >
             <Flex h="100%" p="20px" w="100%" style={{ borderWidth: "10px" }} >
                 <FormControl >
-                    <FormHelperText>Fill free to reach me.</FormHelperText>
+                    <FormHelperText>Feel free to reach me.</FormHelperText>
                     <FormLabel>Email address</FormLabel>
                     <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                     <FormLabel>Name</FormLabel>

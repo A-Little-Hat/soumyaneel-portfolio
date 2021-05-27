@@ -19,8 +19,8 @@ function App() {
 
   return (
     <>
-      <VStack style={{ marginTop: "10px", overflowX: "hidden", width: "100%", overflowY: "hidden" }} className="mainBg">
-        <Box style={{ height: "90vh", marginTop: "20px", width: "100%" }}>
+      <VStack style={{ marginTop: "10px", width: "100%", }} className="mainBg">
+        <Box minH="90vh" style={{ marginTop: "20px", width: "100%" }}>
           <Flex Width="100%" mx="10px">
             <Heading
               ml="15" size="lg" fontWeight='semibold' color="cyan.400">A Little Hat</Heading>
@@ -38,7 +38,7 @@ function App() {
           </Flex>
           <Header />
         </Box>
-        <Box style={{ width: "100%", height: "100vh", }}>
+        <Box style={{ width: "100%", minHeight: "100vh", }}>
           <Section setArea={setAreaNo} />
           <Area areaNo={areaNo} />
         </Box>

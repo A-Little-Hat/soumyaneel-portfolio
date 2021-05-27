@@ -1,6 +1,6 @@
 .container
   height: 250px
-  width: 250px
+  width: 20%
   overflow: hidden
   margin: 0 auto
   border-radius: 50%
@@ -8,15 +8,13 @@
   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3)
   background: linear-gradient(45deg, #178af5, #ecd8fc)
 
-
   &:hover
-    height: 470px
+    min-height: 470px
     width: 350px
     border-radius: 5px
     box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3)
     background: linear-gradient(45deg, #fdeeee, #ecd8fc)
     margin: 0 auto
-
 
   & .wrapper img
     position: relative
@@ -30,14 +28,12 @@
     margin: 22px auto
     transition: all 0.3s ease-in-out
 
-
   &:hover .wrapper img.active
     height: 470px
     width: 350px
     margin: 0px auto
     border: none
     border-radius: 5px
-
 
 .content
   color: #fff
@@ -48,3 +44,52 @@
 .btn
   float: right
   clear: both
+
+.secondary
+  height: 230px
+  width: 210px
+  overflow: hidden
+  display: none
+  margin: 0 auto
+  border-radius: 50%
+  transition: all 0.3s ease-in-out
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3)
+  background: linear-gradient(45deg, #178af5, #ecd8fc)
+
+  &:hover
+    min-height: 470px
+    width: 350px
+    border-radius: 5px
+    box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3)
+    background: linear-gradient(45deg, #fdeeee, #ecd8fc)
+    margin: 0 auto
+
+  & .wrapper img
+    position: relative
+    z-index: 20
+    border-radius: 50%
+    display: block
+    height: 200px
+    width: 200px
+    border: 6px solid #fff
+    object-fit: cover
+    margin: 22px auto
+    transition: all 0.3s ease-in-out
+
+  &:hover .wrapper img.active
+    height: 470px
+    width: 350px
+    margin: 0px auto
+    border: none
+    border-radius: 5px
+
+@media only screen and (max-width: 1000px)
+  .container
+    display: none
+  .secondary
+    display: block
+
+@media only screen and (max-width: 1100px)
+  .container:hover
+    margin-left: 10px
+
