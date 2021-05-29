@@ -95,19 +95,6 @@ const Work = () => {
                     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cupiditate!</h1>
                 </article>
 
-                <article className="card">
-                    <Center>
-                        <header className="card-header">
-                            <Heading >Quick Whatsapp</Heading>
-                        </header>
-                        <div className="card-author">
-                            <div className="author-avatar"  >
-                                <img alt="" src="https://avatars.githubusercontent.com/u/65025579?v=4" />
-                            </div>
-                        </div>
-                    </Center>
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cupiditate!</h1>
-                </article>
             </section>
         </Center>
     );

@@ -44,11 +44,12 @@ function Header() {
 
                 <Box className="intro" mt={isNotSmallerScreen ? "0" : "16"} align='flex-start'>
                     <Text ml="5" fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r, red.300, blue.500, purple.600)" bgClip='text' >Myself Soumyaneel</Text>
-                    <Box w={isNotSmallerScreen ? "500px" : ""} mx="5" >
-                        <Text>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt sint ratione dolore deleniti
-                            dolorum aliquid totam placeat, sapiente magnam sit perspiciatis temporibus numquam ab odit,
-                            doloremque libero voluptates harum maiores?
+                    <Box w={isNotSmallerScreen ? "600px" : ""} mx="3" >
+                        <Text fontSize="2xl" fontWeight="semibold" fontFamily="monospace" >
+                                I'm just an ordinary programmer with tons and tons of bugs to fight. I like to build amazing websites. Learing new things and exploring new tech prods givs me more energy to work.
+                                <p style={{paddingTop:"20px"}}>
+                                I believe that <strong>ability is nothing without opportunity.</strong>  I always try to make myself better than I am.
+                                </p>
                         </Text>
                     </Box>
                 </Box>

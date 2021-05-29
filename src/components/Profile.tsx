@@ -1,14 +1,14 @@
 import React from 'react';
 import { Flex, Box } from '@chakra-ui/layout';
 import { Spacer } from '@chakra-ui/react';
-import Icons from './Icons'
+// import Icons from './Icons'
 
 const Profile = () => {
     return (
         <Box w="100%" p="10">
-            <Box bg="red.100" w="100%" minH="100px" >
+            {/* <Box bg="red.100" w="100%" minH="100px" >
                 <Icons />
-            </Box>
+            </Box> */}
         <Flex w="100%" >
             <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=A-Little-Hat&amp;layout=compact" alt="A-Little-Hat Most Used Languages"/>
                 <Spacer/>

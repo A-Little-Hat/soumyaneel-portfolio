@@ -1,6 +1,5 @@
 import React from 'react'
-import { SimpleGrid, Text } from "@chakra-ui/react"
-import { Box, Center } from "@chakra-ui/layout"
+import { SimpleGrid } from "@chakra-ui/react"
 import IconTech from './IconTech'
 
 
